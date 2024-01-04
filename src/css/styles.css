@@ -23,3 +23,18 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.link {
+  color: #242424;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.link:hover {
+  color: #05773c;
+}
