@@ -1,5 +1,7 @@
 import SimpleLightbox from 'simplelightbox';
-import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm';
+
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -68,7 +70,11 @@ const images = [
 
 const container = document.querySelector('.gallery');
 container.innerHTML = createMarcup(images);
-let gallery = new SimpleLightbox('.gallery a');
+const gallery = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
+
 function createMarcup(arr) {
   return arr
     .map(
